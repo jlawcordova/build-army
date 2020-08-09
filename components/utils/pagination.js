@@ -2,9 +2,9 @@ import styles from "./pagination.module.css";
 
 function Pagination({ low, high, selected }) {
   var content = [];
-  low = 7;
-  high = 13;
-  selected = 7;
+  // low = 7;
+  // high = 13;
+  // selected = 13;
   for (let index = low; index <= high; index++) {
     content.push(index);
   }
@@ -16,6 +16,7 @@ function Pagination({ low, high, selected }) {
           className={`${styles.item} ${selected == c ? styles.selected : ""} ${
             selected - 1 == c ? styles.selectedPrevious : ""
           }`}
+          key={c}
         >
           {c}
         </li>

@@ -3,6 +3,8 @@
   --main-text-color: rgba(255, 255, 255, 0.92);
   --light-text-color: rgba(255, 255, 255, 0.5);
   --accent-color: #f7b704;
+
+  --side-margin: 288px;
 }
 
 body {
@@ -26,9 +28,59 @@ button {
   background: linear-gradient(79.54deg, #f0a700 4.94%, #fff09a 226.14%);
 }
 
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+h2 {
+  font-family: Luckiest Guy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
 h3 {
-  font-family: Patua One;
+  font-family: "Patua One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 1366px) {
+  :root {
+    --side-margin: 200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --side-margin: 104px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --side-margin: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --side-margin: 42px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

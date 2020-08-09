@@ -1,5 +1,5 @@
 .headerContainer {
-  margin: 0 291px;
+  margin: 0 var(--side-margin);
   padding: 136px 0 24px 0;
 }
 
@@ -21,8 +21,32 @@
   padding: 24px 0;
 }
 
+.selected {
+  color: var(--accent-color);
+}
+
 .signInButton {
   font-family: "Luckiest Guy", cursive;
   margin-left: auto;
   margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerContainer {
+    margin: 0 0px;
+    padding: 42px 0 24px 0;
+  }
+
+  .navigationLinks {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .signInButton {
+    margin: auto auto;
+  }
+
+  .navigationLinks {
+    padding-left: 0;
+  }
 }

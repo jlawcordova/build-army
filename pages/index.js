@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
 import Jumbotron from "../components/rank/jumbotron";
+import EraGuide from "../components/guides/era/era-guide";
 
 function Gallery() {
   return (
@@ -17,6 +18,7 @@ function Gallery() {
       </Head>
       <Layout>
         <Jumbotron></Jumbotron>
+        <EraGuide></EraGuide>
       </Layout>
     </>
   );

@@ -1,0 +1,15 @@
+.container {
+  padding: 0 var(--side-margin);
+  background-image: url("/images/background/era-header.png");
+  background-size: cover;
+  background-position: right;
+}
+
+.heading {
+  padding-top: 42px;
+}
+
+.subheading {
+  padding-top: 4px;
+  padding-bottom: 42px;
+}

@@ -9,7 +9,9 @@ function Header() {
             <img className={styles.logo} src="/images/logo/logo.svg" />
           </a>
           <div className={styles.navigationLinks}>
-            <a className={styles.navigationLink}>Gallery</a>
+            <a className={`${styles.navigationLink} ${styles.selected}`}>
+              Gallery
+            </a>
             <a className={styles.navigationLink}>Builder</a>
             <a className={styles.navigationLink}>Finder</a>
           </div>
