@@ -1,0 +1,30 @@
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0c0f;
+}
+
+.heading {
+  /* heading-1-jumbotron */
+
+  font-family: "Patua One", cursive;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  padding-top: 72px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: Patua One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+  margin-bottom: 16px;
+}

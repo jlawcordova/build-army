@@ -1,0 +1,28 @@
+.headerContainer {
+  margin: 0 291px;
+  padding: 136px 0 24px 0;
+}
+
+.logo {
+  max-width: 110px;
+  max-height: 96px;
+}
+
+.navigationLinks {
+  display: inline-flex;
+  padding-left: 22px;
+}
+
+.navigationLink {
+  font-family: "Luckiest Guy", cursive;
+  display: inline-block;
+  text-align: center;
+  width: 96px;
+  padding: 24px 0;
+}
+
+.signInButton {
+  font-family: "Luckiest Guy", cursive;
+  margin-left: auto;
+  margin-bottom: 12px;
+}

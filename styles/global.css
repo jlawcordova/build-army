@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: #14151a;
+  --main-text-color: rgba(255, 255, 255, 0.92);
+  --light-text-color: rgba(255, 255, 255, 0.5);
+  --accent-color: #f7b704;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Patua One", cursive;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+button {
+  width: 160px;
+  padding: 12px 0 10px;
+  border-radius: 8px;
+  font-family: "Luckiest Guy", cursive;
+  color: var(--main-text-color);
+  border: 0;
+  background: linear-gradient(79.54deg, #f0a700 4.94%, #fff09a 226.14%);
+}
+
+h3 {
+  font-family: Patua One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
