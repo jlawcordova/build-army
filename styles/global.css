@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #14151a;
+  --alt-bg-color: #0c0c0f;
   --main-text-color: rgba(255, 255, 255, 0.92);
   --light-text-color: rgba(255, 255, 255, 0.5);
   --accent-color: #f7b704;
@@ -20,12 +21,16 @@ nav {
 
 button {
   width: 160px;
-  padding: 12px 0 10px;
+  padding: 8px 0 8px;
   border-radius: 8px;
   font-family: "Luckiest Guy", cursive;
   color: var(--main-text-color);
   border: 0;
   background: linear-gradient(79.54deg, #f0a700 4.94%, #fff09a 226.14%);
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -34,10 +39,12 @@ h1 {
   font-weight: normal;
   font-size: 42px;
   line-height: 42px;
+  letter-spacing: 1px;
+  color: var(--accent-color);
 }
 
 h2 {
-  font-family: Luckiest Guy;
+  font-family: "Luckiest Guy", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;

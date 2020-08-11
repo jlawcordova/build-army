@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1-swarm",
+    "title": "Swarm",
+    "shortDescription": "Overwhelm the opponent’s army with a swarm of fast, high damage units.",
+    "units": [
+      { "id": "SB", "count": 6 },
+      { "id": "AR", "count": 4 },
+      { "id": "BD", "count": 3 },
+      { "id": "BW", "count": 2 },
+      { "id": "BB", "count": 1 }
+    ],
+    "creator": {
+      "username": "jlawcordova"
+    }
+  }
+]

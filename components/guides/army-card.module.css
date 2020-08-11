@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  height: 212px;
+  background: linear-gradient(270deg, #1f232f 0%, #3c4054 100%);
+  border-radius: 8px;
+  margin: 0px var(--side-margin) 16px;
+  padding: 48px 64px;
+  box-sizing: border-box;
+}
+
+.container.eraContainer {
+  height: 196px;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.heading {
+  margin-bottom: 2px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.createdBy {
+  color: var(--light-text-color);
+}
+
+.username {
+  color: var(--accent-color);
+}
+
+.description {
+  max-width: 250px;
+  box-sizing: border-box;
+  margin-right: 36px;
+}
+
+.paragraph {
+  line-height: 20px;
+  width: 250px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.units {
+  display: flex;
+  align-items: center;
+}
+
+.moreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.more {
+  display: block;
+  box-sizing: border-box;
+  width: 56px;
+  text-align: center;
+  font-size: 28px;
+  color: var(--accent-color);
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+.moreSub {
+  font-size: 16px;
+  font-family: "Patua One", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .description {
+    margin-bottom: 24px;
+    max-width: none;
+    box-sizing: border-box;
+    margin-right: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    height: calc(212px + 108px);
+  }
+
+  .container.eraContainer {
+    height: calc(196px + 108px);
+  }
+  .paragraph {
+    height: 40px;
+    width: auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    margin-bottom: 24px;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .container {
+    flex-direction: column;
+    height: calc(212px + 88px);
+    padding: 28px 32px;
+  }
+
+  .container.eraContainer {
+    height: calc(196px + 88px);
+  }
+
+  .paragraph {
+    height: 60px;
+    width: auto;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .units {
+    justify-content: center;
+  }
+}

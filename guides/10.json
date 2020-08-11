@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1-swarm",
+    "title": "Swarm",
+    "shortDescription": "Overwhelm the opponent’s army with a swarm of fast, high damage units.",
+    "units": [
+      { "id": "AB", "count": 5 },
+      { "id": "WH", "count": 5 },
+      { "id": "W", "count": 2 },
+      { "id": "DK", "count": 1 }
+    ],
+    "creator": {
+      "username": "jlawcordova"
+    }
+  },
+  {
+    "id": "2-spire-defense",
+    "title": "Spire Defense",
+    "shortDescription": "A defensive strategy which forces your opponent to fight on your side of the field under the powerful spire.",
+    "units": [
+      { "id": "CS", "count": 1 },
+      { "id": "EE", "count": 1 },
+      { "id": "SB", "count": 2 },
+      { "id": "HT", "count": 1 },
+      { "id": "PT", "count": 1 },
+      { "id": "AR", "count": 2 },
+      { "id": "BM", "count": 1 },
+      { "id": "MS", "count": 1 }
+    ],
+    "creator": {
+      "username": "jlawcordova"
+    }
+  },
+  {
+    "id": "3-stormcaller-army",
+    "title": "Plague Army",
+    "shortDescription": "Build around the Stormcaller and Plague Throwers to deal massive DPS.",
+    "units": [
+      { "id": "SC", "count": 1 },
+      { "id": "PT", "count": 1 },
+      { "id": "EE", "count": 1 },
+      { "id": "SB", "count": 2 },
+      { "id": "HT", "count": 1 },
+      { "id": "AR", "count": 2 }
+    ],
+    "creator": {
+      "username": "jlawcordova"
+    }
+  }
+]

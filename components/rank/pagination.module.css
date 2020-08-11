@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--light-text-color);
+  border-left: none;
+  cursor: pointer;
+}
+
+.item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: var(--main-text-color);
+}
+
+.item:last-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.item:first-of-type {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid var(--light-text-color);
+}
+
+.item.selected {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .item {
+    display: flex;
+    width: 30px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--light-text-color);
+    border-left: none;
+    cursor: pointer;
+  }
+
+  .item.selected {
+    color: var(--accent-color);
+    font-size: 20px;
+    border-color: var(--accent-color);
+    cursor: initial;
+  }
+}
+
+.item.selected {
+  border-color: var(--accent-color);
+  cursor: initial;
+}
+
+.item.selected a {
+  color: var(--accent-color);
+}
+
+.selectedPrevious {
+  border-right: 1px solid var(--accent-color);
+}

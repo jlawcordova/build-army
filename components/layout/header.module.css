@@ -17,8 +17,9 @@
   font-family: "Luckiest Guy", cursive;
   display: inline-block;
   text-align: center;
-  width: 96px;
+  width: 104px;
   padding: 24px 0;
+  font-size: 20px;
 }
 
 .selected {
@@ -29,6 +30,7 @@
   font-family: "Luckiest Guy", cursive;
   margin-left: auto;
   margin-bottom: 12px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {

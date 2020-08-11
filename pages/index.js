@@ -1,27 +1,36 @@
-import Head from "next/head";
 import Layout from "../components/layout/layout";
-import Jumbotron from "../components/rank/jumbotron";
-import EraGuide from "../components/guides/era/era-guide";
+import Gallery from "../components/gallery/gallery";
+import { GetEra, GetGuides, GetGuideRanks } from "../lib/guide-service";
 
-function Gallery() {
+const defaultRank = 14;
+
+function Index({ era, guides, rank, availableRanks }) {
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
       <Layout>
-        <Jumbotron></Jumbotron>
-        <EraGuide></EraGuide>
+        <Gallery
+          era={era}
+          guides={guides}
+          rank={rank}
+          availableRanks={availableRanks}
+        ></Gallery>
       </Layout>
     </>
   );
 }
 
-export default Gallery;
+export default Index;
+
+export async function getStaticProps() {
+  var era = GetEra();
+  var guides = GetGuides(era, defaultRank);
+
+  return {
+    props: {
+      era: era,
+      guides: guides,
+      rank: defaultRank,
+      availableRanks: GetGuideRanks(),
+    },
+  };
+}

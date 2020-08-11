@@ -1,10 +1,8 @@
+import Link from "next/link";
 import styles from "./pagination.module.css";
 
 function Pagination({ low, high, selected }) {
   var content = [];
-  // low = 7;
-  // high = 13;
-  // selected = 13;
   for (let index = low; index <= high; index++) {
     content.push(index);
   }
@@ -18,7 +16,9 @@ function Pagination({ low, high, selected }) {
           }`}
           key={c}
         >
-          {c}
+          <Link href={`/rank/${c}`}>
+            <a>{c}</a>
+          </Link>
         </li>
       ))}
     </ul>
