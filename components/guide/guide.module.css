@@ -1,0 +1,11 @@
+.container {
+  margin: 0 var(--side-margin);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+}
+
+.bodyContainer {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}

@@ -2,7 +2,7 @@ import styles from "./guide.module.css";
 import ArmyCard from "./army-card";
 import GuideHeader from "./guide-header";
 
-function EraGuide({ era, guides, title, description }) {
+function Guides({ era, guides, title, description }) {
   return (
     <>
       <GuideHeader
@@ -19,4 +19,4 @@ function EraGuide({ era, guides, title, description }) {
   );
 }
 
-export default EraGuide;
+export default Guides;

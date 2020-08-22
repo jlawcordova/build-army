@@ -1,0 +1,48 @@
+.container {
+  padding: 72px var(--side-margin);
+  background-color: var(--alt-bg-color);
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.likeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+  font-size: 24px;
+}
+
+.likeContainer i {
+  color: var(--light-text-color);
+}
+
+.likeContainer .voted {
+  color: var(--accent-color);
+}
+
+.titleContainer {
+  margin-left: 32px;
+}
+
+.heading {
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--accent-color);
+  margin-bottom: 2px;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.createdContainer a {
+  color: var(--accent-color);
+}
+
+.createdLabel {
+  color: var(--light-text-color);
+}

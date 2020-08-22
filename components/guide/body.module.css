@@ -1,0 +1,10 @@
+.container {
+  background: linear-gradient(270deg, #1f232f 0%, #3c4054 100%);
+  border-radius: 8px;
+  padding: 48px 64px;
+  margin-bottom: 68px;
+}
+
+.separator {
+  margin-bottom: 24px;
+}

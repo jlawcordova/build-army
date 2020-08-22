@@ -1,11 +1,11 @@
 import Jumbotron from "../rank/jumbotron";
-import Guide from "../guides/guide";
+import Guides from "../guides/guides";
 
 function Gallery({ era, guides, rank, availableRanks }) {
   return (
     <>
       <Jumbotron rank={rank} availableRanks={availableRanks}></Jumbotron>
-      <Guide era={era} guides={guides}></Guide>
+      <Guides era={era} guides={guides}></Guides>
       {/* 
         TODO: Include community guide.
         <Guide
