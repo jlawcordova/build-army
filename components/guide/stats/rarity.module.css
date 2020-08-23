@@ -1,0 +1,48 @@
+.container {
+  width: 124px;
+  height: 124px;
+  margin-right: 16px;
+  display: flex;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.itemsContainer {
+  margin-top: 4px;
+}
+
+.item {
+  height: 16px;
+  margin-bottom: 2px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.itemLabel {
+  width: 48px;
+  font-size: 12px;
+  text-transform: lowercase;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.bar {
+  width: 60px;
+  height: 10px;
+}
+
+.barFill {
+  height: 10px;
+  background: linear-gradient(79.54deg, #f0a700 4.94%, #fff09a 226.14%);
+  border-radius: 5px;
+}

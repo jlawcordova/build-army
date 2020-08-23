@@ -4,9 +4,15 @@ function GuideTitle() {
   return (
     <div className={styles.container}>
       <div className={styles.likeContainer}>
-        <i className={`fas fa-chevron-up ${true ? styles.voted : ""}`}></i>
+        <i
+          aria-hidden
+          className={`fas fa-chevron-up ${true ? styles.voted : ""}`}
+        ></i>
         <span>2</span>
-        <i className={`fas fa-chevron-down ${false ? styles.voted : ""}`}></i>
+        <i
+          aria-hidden
+          className={`fas fa-chevron-down ${false ? styles.voted : ""}`}
+        ></i>
       </div>
       <div className={styles.titleContainer}>
         <div className={styles.title}>

@@ -2,6 +2,7 @@ import styles from "./body.module.css";
 import GuideUnits from "./units";
 import GuideLayout from "./layout";
 import GuideDescription from "./description";
+import GuideStats from "./stats/stats";
 
 function GuideBody() {
   return (
@@ -12,6 +13,7 @@ function GuideBody() {
       <hr className={styles.separator} />
       <GuideDescription></GuideDescription>
       <hr className={styles.separator} />
+      <GuideStats></GuideStats>
     </div>
   );
 }

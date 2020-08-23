@@ -1,0 +1,25 @@
+.container {
+  width: 124px;
+  height: 124px;
+  margin-right: 16px;
+  display: flex;
+  border: 2px solid var(--accent-color);
+  border-radius: 124px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.content {
+  width: 124px;
+  margin-top: 2px;
+  font-size: 16px;
+}
