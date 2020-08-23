@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./army-card.module.css";
 import ArmyCardUnit from "./army-card-unit";
 import useWindowSize from "../../lib/use-window-size";
@@ -66,30 +67,36 @@ function ArmyCard({ era, guide }) {
     );
 
   return (
-    <div
-      className={`${era != null ? styles.eraContainer : ""} ${
-        styles.container
-      }`}
-    >
-      <div className={styles.description}>
-        <div className={styles.title}>
-          <h2
-            className={styles.heading}
-            style={era == null ? {} : { color: era.color }}
-          >
-            {guide?.title}
-          </h2>
-          {username}
+    <Link href={`/guide/${guide.id}`}>
+      <a>
+        <div
+          className={`${era != null ? styles.eraContainer : ""} ${
+            styles.container
+          }`}
+        >
+          <div className={styles.description}>
+            <div className={styles.title}>
+              <h2
+                className={styles.heading}
+                style={era == null ? {} : { color: era.color }}
+              >
+                {guide?.title}
+              </h2>
+              {username}
+            </div>
+            <p className={styles.paragraph}>{guide?.shortDescription}</p>
+          </div>
+          <div className={styles.units}>
+            {displayUnits?.map((u) => (
+              <div className={styles.unitsContainer} key={u.id}>
+                <ArmyCardUnit unit={u} key={u.id}></ArmyCardUnit>
+              </div>
+            ))}
+            {more}
+          </div>
         </div>
-        <p className={styles.paragraph}>{guide?.shortDescription}</p>
-      </div>
-      <div className={styles.units}>
-        {displayUnits?.map((u) => (
-          <ArmyCardUnit unit={u} key={u.id}></ArmyCardUnit>
-        ))}
-        {more}
-      </div>
-    </div>
+      </a>
+    </Link>
   );
 }
 

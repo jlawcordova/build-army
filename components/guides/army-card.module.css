@@ -79,6 +79,10 @@
   font-family: "Patua One", cursive;
 }
 
+.unitsContainer {
+  margin-right: 16px;
+}
+
 @media only screen and (max-width: 768px) {
   .description {
     margin-bottom: 24px;

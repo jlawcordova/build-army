@@ -46,3 +46,16 @@
   background: linear-gradient(79.54deg, #f0a700 4.94%, #fff09a 226.14%);
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

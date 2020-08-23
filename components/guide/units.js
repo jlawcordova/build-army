@@ -14,7 +14,9 @@ function GuideUnits() {
       <h4>Units</h4>
       <div className={styles.units}>
         {units?.map((u) => (
-          <ArmyCardUnit unit={u} key={u.id}></ArmyCardUnit>
+          <div className={styles.unit}>
+            <ArmyCardUnit unit={u} key={u.id}></ArmyCardUnit>
+          </div>
         ))}
       </div>
     </>

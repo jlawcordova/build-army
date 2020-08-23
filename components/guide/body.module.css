@@ -8,3 +8,9 @@
 .separator {
   margin-bottom: 24px;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 28px 32px;
+  }
+}
