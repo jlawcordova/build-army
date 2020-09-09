@@ -11,7 +11,9 @@
     ],
     "creator": {
       "username": "jlawcordova"
-    }
+    },
+    "rank": 10,
+    "era": 1
   },
   {
     "id": "2-spire-defense",
@@ -29,7 +31,9 @@
     ],
     "creator": {
       "username": "jlawcordova"
-    }
+    },
+    "rank": 10,
+    "era": 1
   },
   {
     "id": "3-stormcaller-army",
@@ -45,6 +49,8 @@
     ],
     "creator": {
       "username": "jlawcordova"
-    }
+    },
+    "rank": 10,
+    "era": 1
   }
 ]

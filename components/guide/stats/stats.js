@@ -3,14 +3,14 @@ import EraStats from "./era";
 import RankStats from "./rank";
 import RarityStats from "./rarity";
 
-function GuideStats() {
+function GuideStats({ era, rank, units }) {
   return (
     <>
       <h4>Stats</h4>
       <div className={styles.statsContainer}>
-        <EraStats></EraStats>
-        <RankStats></RankStats>
-        <RarityStats></RarityStats>
+        <EraStats era={era}></EraStats>
+        <RankStats rank={rank}></RankStats>
+        <RarityStats units={units}></RarityStats>
       </div>
     </>
   );

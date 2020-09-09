@@ -13,6 +13,10 @@
   font-size: 24px;
 }
 
+.likePlaceholder {
+  width: 32px;
+}
+
 .likeContainer i {
   color: var(--light-text-color);
 }

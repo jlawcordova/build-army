@@ -1,12 +1,8 @@
 import styles from "./era.module.css";
+import { GetEra } from "../../../lib/era-service";
 
 function EraStats({ era }) {
-  era = {
-    id: "1",
-    title: "Age of Eternal Winter",
-    color: "#7BE7FF",
-    background: "/images/background/era-header.png",
-  };
+  var era = GetEra(era);
 
   return (
     <div className={styles.container}>

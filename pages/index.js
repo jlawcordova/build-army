@@ -1,6 +1,7 @@
 import Layout from "../components/layout/layout";
 import Gallery from "../components/gallery/gallery";
-import { GetEra, GetGuides, GetGuideRanks } from "../lib/guide-service";
+import { GetGuides, GetGuideRanks } from "../lib/guide-service";
+import { GetCurrentEra } from "../lib/era-service";
 
 const defaultRank = 14;
 
@@ -22,7 +23,7 @@ function Index({ era, guides, rank, availableRanks }) {
 export default Index;
 
 export async function getStaticProps() {
-  var era = GetEra();
+  var era = GetCurrentEra();
   var guides = GetGuides(era, defaultRank);
 
   return {

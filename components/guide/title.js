@@ -1,35 +1,37 @@
 import styles from "./title.module.css";
 
-function GuideTitle() {
+function GuideTitle({ title, creator, shortDescription, likes }) {
   return (
     <div className={styles.container}>
-      <div className={styles.likeContainer}>
-        <i
-          aria-hidden
-          className={`fas fa-chevron-up ${true ? styles.voted : ""}`}
-        ></i>
-        <span>2</span>
-        <i
-          aria-hidden
-          className={`fas fa-chevron-down ${false ? styles.voted : ""}`}
-        ></i>
-      </div>
+      {LikesDisplay(likes)}
       <div className={styles.titleContainer}>
         <div className={styles.title}>
-          <h1 className={styles.heading}>Swarm</h1>
+          <h1 className={styles.heading}>{title}</h1>
           <div className={styles.createdContainer}>
             <span className={styles.createdLabel}>Created by </span>
-            <a href="">
-              <span>jlawcordova</span>
-            </a>
+            <span>{creator.username}</span>
           </div>
         </div>
-        <p className={styles.description}>
-          A defensive strategy which forces your opponent to fight on your side
-          of the field under the powerful spire. Lorem ipsum dorlor amet Lorem
-          ipsum dorlor ametLorem ipsum dorlor amet.
-        </p>
+        <p className={styles.description}>{shortDescription}</p>
       </div>
+    </div>
+  );
+}
+
+function LikesDisplay(likes) {
+  return likes == null ? (
+    <div className={styles.likePlaceholder}></div>
+  ) : (
+    <div className={styles.likeContainer}>
+      <i
+        aria-hidden
+        className={`fas fa-chevron-up ${true ? styles.voted : ""}`}
+      ></i>
+      <span>{likes}</span>
+      <i
+        aria-hidden
+        className={`fas fa-chevron-down ${false ? styles.voted : ""}`}
+      ></i>
     </div>
   );
 }

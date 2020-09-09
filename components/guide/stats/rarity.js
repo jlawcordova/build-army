@@ -1,11 +1,8 @@
 import styles from "./rarity.module.css";
+import { GetRarityStats } from "../../../lib/stats-service";
 
-function RarityStats() {
-  var rarities = {
-    common: 0.8,
-    rare: 0.2,
-    mythic: 0,
-  };
+function RarityStats({ units }) {
+  var rarities = GetRarityStats(units);
   const barWidth = 60;
 
   return (

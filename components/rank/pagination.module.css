@@ -35,7 +35,8 @@
   font-size: 24px;
 }
 
-@media only screen and (max-width: 600px) {
+/* Needed if number of ranks does not fit display. */
+/* @media only screen and (max-width: 600px) {
   .item {
     display: flex;
     width: 30px;
@@ -53,7 +54,7 @@
     border-color: var(--accent-color);
     cursor: initial;
   }
-}
+} */
 
 .item.selected {
   border-color: var(--accent-color);

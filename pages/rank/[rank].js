@@ -1,6 +1,7 @@
 import Layout from "../../components/layout/layout";
 import Gallery from "../../components/gallery/gallery";
-import { GetEra, GetGuides, GetGuideRanks } from "../../lib/guide-service";
+import { GetGuides, GetGuideRanks } from "../../lib/guide-service";
+import { GetCurrentEra } from "../../lib/era-service";
 
 function RankGallery({ era, guides, rank, availableRanks }) {
   return (
@@ -33,7 +34,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  var era = GetEra();
+  var era = GetCurrentEra();
   var guides = GetGuides(era, params.rank);
   var availableRanks = GetGuideRanks();
 

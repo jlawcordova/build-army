@@ -1,6 +1,6 @@
 [
   {
-    "id": "1-swarm",
+    "id": "6-swarm",
     "title": "Swarm",
     "shortDescription": "Overwhelm the opponent’s army with a swarm of fast, high damage units.",
     "units": [
@@ -12,6 +12,8 @@
     ],
     "creator": {
       "username": "jlawcordova"
-    }
+    },
+    "rank": 9,
+    "era": 1
   }
 ]
