@@ -3,7 +3,7 @@ import styles from "./description.module.css";
 function GuideDescription() {
   return (
     <>
-      <h4>Description</h4>
+      <h3>Description</h3>
       <p className={styles.paragraph}>
         Bro ipsum dolor sit amet euro titanium rip Ski taco stunt wheelie drop
         rig bonk saddle air OTB. Twin tip giblets shreddin face plant taco mitt

@@ -7,8 +7,15 @@
 }
 
 .unitImage {
-  height: 64px;
   margin-bottom: 8px;
+}
+
+.normal {
+  height: 64px;
+}
+
+.small {
+  height: 48px;
 }
 
 .unitAmount {

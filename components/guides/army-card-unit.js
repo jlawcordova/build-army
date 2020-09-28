@@ -33,11 +33,20 @@ const unitImage = {
   MC: "/images/units/mind_corruptor_eldritch.png",
 };
 
-function ArmyCardUnit({ unit }) {
+function ArmyCardUnit({ unit, showCount = true, size = "normal" }) {
+  var sizeStyle = size == "normal" ? styles.normal : styles.small;
+
   return (
     <div className={styles.container}>
-      <img className={styles.unitImage} src={unitImage[unit?.id]} />
-      <span className={styles.unitAmount}>{unit?.count}x</span>
+      <img
+        className={`${styles.unitImage} ${sizeStyle}`}
+        src={unitImage[unit?.id]}
+      />
+      {showCount ? (
+        <span className={styles.unitAmount}>{unit?.count}x</span>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

@@ -6,7 +6,7 @@ import RarityStats from "./rarity";
 function GuideStats({ era, rank, units }) {
   return (
     <>
-      <h4>Stats</h4>
+      <h3>Stats</h3>
       <div className={styles.statsContainer}>
         <EraStats era={era}></EraStats>
         <RankStats rank={rank}></RankStats>
