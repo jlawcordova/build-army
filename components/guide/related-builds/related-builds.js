@@ -1,11 +1,11 @@
 import RelatedBuild from "./related-build";
 
-function RelatedBuilds() {
+function RelatedBuilds({ relatedBuilds }) {
   return (
     <>
       <h2>Related Builds</h2>
-      {[1, 2, 3].map((rb) => (
-        <RelatedBuild key={rb}></RelatedBuild>
+      {relatedBuilds.map((rb) => (
+        <RelatedBuild key={rb.id} relatedBuild={rb}></RelatedBuild>
       ))}
     </>
   );

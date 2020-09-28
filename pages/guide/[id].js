@@ -1,11 +1,15 @@
 import Layout from "../../components/layout/layout";
 import Guide from "../../components/guide/guide";
-import { GetAllGuides, GetGuide } from "../../lib/guide-service";
+import {
+  GetAllGuides,
+  GetGuide,
+  GetRelatedGuides,
+} from "../../lib/guide-service";
 
-function GuideLayout({ guide }) {
+function GuideLayout({ guide, relatedBuilds }) {
   return (
     <Layout>
-      <Guide guide={guide}></Guide>
+      <Guide guide={guide} relatedBuilds={relatedBuilds}></Guide>
     </Layout>
   );
 }
@@ -27,10 +31,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   var guide = GetGuide(params.id);
+  var relatedBuilds = GetRelatedGuides(guide);
 
   return {
     props: {
-      guide: guide
+      guide: guide,
+      relatedBuilds: relatedBuilds,
     },
   };
 }

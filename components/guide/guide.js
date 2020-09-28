@@ -3,7 +3,7 @@ import GuideTitle from "./title";
 import GuideBody from "./body";
 import RelatedBuilds from "./related-builds/related-builds";
 
-function Guide({ guide }) {
+function Guide({ guide, relatedBuilds }) {
   return (
     <>
       <GuideTitle
@@ -17,7 +17,7 @@ function Guide({ guide }) {
           <GuideBody guide={guide}></GuideBody>
         </div>
         <div className={styles.relatedBuildsContainer}>
-          <RelatedBuilds></RelatedBuilds>
+          <RelatedBuilds relatedBuilds={relatedBuilds}></RelatedBuilds>
         </div>
       </div>
     </>

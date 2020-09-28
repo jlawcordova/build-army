@@ -1,26 +1,8 @@
+import Link from "next/link";
 import styles from "./related-build.module.css";
 import ArmyCardUnit from "../../guides/army-card-unit";
 
-function RelatedBuild() {
-  var relatedBuild = {
-    id: "1-swarm",
-    title: "Swarm",
-    shortDescription:
-      "Overwhelm the opponent’s army with a swarm of fast, high damage units.",
-    units: [
-      { id: "AB", count: 5 },
-      { id: "WH", count: 5 },
-      { id: "W", count: 2 },
-      { id: "DK", count: 1 },
-      { id: "CS", count: 1 },
-    ],
-    creator: {
-      username: "jlawcordova",
-    },
-    rank: 10,
-    era: 1,
-  };
-
+function RelatedBuild({ relatedBuild }) {
   var displayUnits = [...relatedBuild?.units];
   var more = <></>;
   if (displayUnits.length > 4) {
@@ -34,24 +16,26 @@ function RelatedBuild() {
   }
 
   return (
-    <a href="">
-      <div className={styles.relatedBuildContainer}>
-        <h3 className={styles.header}>{relatedBuild.title}</h3>
-        <p className={styles.paragraph}>{relatedBuild.shortDescription}</p>
-        <div className={styles.unitsContainer}>
-          {displayUnits?.map((u) => (
-            <div className={styles.unitContainer}>
-              <ArmyCardUnit
-                unit={u}
-                showCount={false}
-                size={"small"}
-              ></ArmyCardUnit>
-            </div>
-          ))}
-          {more}
+    <Link href={`/guide/${relatedBuild.id}`}>
+      <a>
+        <div className={styles.relatedBuildContainer}>
+          <h3 className={styles.header}>{relatedBuild.title}</h3>
+          <p className={styles.paragraph}>{relatedBuild.shortDescription}</p>
+          <div className={styles.unitsContainer}>
+            {displayUnits?.map((u) => (
+              <div className={styles.unitContainer} key={u.id}>
+                <ArmyCardUnit
+                  unit={u}
+                  showCount={false}
+                  size={"small"}
+                ></ArmyCardUnit>
+              </div>
+            ))}
+            {more}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </Link>
   );
 }
 
